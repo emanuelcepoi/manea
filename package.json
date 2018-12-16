@@ -7,5 +7,9 @@
   "keywords": [],
   "author": "Emanuel Cepoi",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/emanuelcepoi/manea.git"
+  }
   "dependencies": {}
 }
