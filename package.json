@@ -1,0 +1,11 @@
+{
+  "name": "manea",
+  "version": "1.2.5",
+  "description": "Module that will generate a random manea youtube link",
+  "main": "manele.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Emanuel Cepoi",
+  "license": "ISC",
+  "dependencies": {}
+}
