@@ -2097,7 +2097,12 @@ function iaRandom(arr, n) {
 }
 
 module.exports.iaManeaua = function(tipManea) {
-	let _tipManea = tipManea.toLowerCase();
+	let _tipManea = {
+		"veche": "vechi",
+		"noua": "noi",
+		"populara": "populare"
+	}[tipManea.toLowerCase()];
+	
 	switch (_tipManea) {
 		case "vechi":
 		case "noi":
