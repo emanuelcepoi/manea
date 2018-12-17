@@ -837,6 +837,10 @@ let manele = {
 			"name": "COSTI IONITA & ADRIAN COPILUL MINUNE -  Nopti si zile"
 		},
 		{
+			"id": "VqprMzZXTf4",
+			"name": "FLORIN MINUNE - PUMNII MEI MINTE NU ARE!"
+		},
+		{
 			"id": "2sRDNn-0p0U",
 			"name": "ADI DE LA VALCEA - AM FRUMUSETE DE FATA, ZOOM STUDIO"
 		},
