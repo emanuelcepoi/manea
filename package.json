@@ -1,6 +1,6 @@
 {
   "name": "manea",
-  "version": "1.2.7",
+  "version": "1.3.7",
   "description": "Module that will generate a random manea youtube link",
   "main": "manele.js",
   "scripts": {},

@@ -1531,6 +1531,12 @@ let manele = {
 			"name": "[Videoclip privat]"
 		}
 	],
+	"spike": [
+		{
+			"id": "aPCyEzfiK1I",
+			"name": "Spike - Manele"
+		}
+	],
 	"nicolae guta": [
 		{
 			"id": "cBRu9ZkKom8",
@@ -2124,6 +2130,7 @@ module.exports.iaManeauaDeLa = function(nume) {
 		case "florin salam":
 		case "nicolae guta":
 		case "sorinel pustiu":
+		case "spike":
 			return addURL(manele[_nume][Math.floor(Math.random() * manele[_nume].length)]);
 
 		default:
