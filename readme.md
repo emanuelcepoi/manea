@@ -68,13 +68,14 @@ console.log(manea.iaManele('vechi', 3));
 ```
 
 ### What if you wanna generate manele from a specific manelist?
-We currently support three diferent romanian manelists: Florin Slam, Nicolae Guta, Sorinel Pustiu
+We currently support the follwing romanian artists: Florin Slam, Nicolae Guta, Sorinel Pustiu, Nicu Paleru, Generic, Spike
 ```js
 const manea = require('manea');
 
 /*
     The iaManeaDeLa() function accepts one argument, that's the manelist name.
-    Available manelists are: 'Florin Salam', 'Nicolae Guta', 'Sorinel Pustiu'
+    Available manelists are: 'Florin Salam', 'Nicolae Guta', 'Sorinel Pustiu',
+                             'Nicu Paleru', 'Generic', 'Spike'
 */
 console.log(manea.iaManeauaDeLa('Sorinel Pustiu'))
 /* Object
