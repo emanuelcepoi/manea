@@ -2095,13 +2095,13 @@ function addURL(manea) {
 function iaRandom(arr, nr) {
 	let n = Math.floor(Number(nr));
 	if (
-		("number" === typeof(n) && (Infinity === nr || Number.isNaN(nr))) ||
-		("string" === typeof(nr) && "fara numar" === nr.toLowerCase())
+		(typeof(n) === "number" && (nr === Infinity || Number.isNaN(nr))) ||
+		(typeof(nr) === "string" && nr.toLowerCase() === "fara numar")
 	)
 		n = arr.length;
 
-	else if (0 >= n) {
-		if (0 == nr)
+	else if (n <= 0) {
+		if (nr == 0)
 			throw new TypeError("Baga macar o manea ceva acolo sa placa la toata lumea");
 		throw new TypeError("Numar invalid de manele");
 		//n = Math.floor(Math.random() * arr.length);
