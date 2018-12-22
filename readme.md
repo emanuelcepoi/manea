@@ -83,7 +83,7 @@ console.log(manea.iaManeauaDeLa('Sorinel Pustiu'))
   url: 'https://youtube.com/watch?v=YRH8YWcor6A' }
    */
 ```
-##### Made with valoare by fb.com/emanuelcepoi
+##### Made with valuare by fb.com/emanuelcepoi
 
 
 
