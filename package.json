@@ -1,8 +1,8 @@
 {
   "name": "manea",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "Module that will generate a random manea youtube link",
-  "main": "manele.js",
+  "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "Emanuel Cepoi",
