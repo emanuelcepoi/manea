@@ -2092,17 +2092,37 @@ function addURL(manea) {
 	return manea;
 }
 
-function iaRandom(arr, n) {
-	var result = new Array(n),
-		len = arr.length,
+function iaRandom(arr, nr) {
+	let n = Math.floor(Number(nr));
+	if (
+		(typeof(n) === "number" && (nr === Infinity || Number.isNaN(nr))) ||
+		(typeof(nr) === "string" && nr.toLowerCase() === "fara numar")
+	)
+		n = arr.length;
+
+	else if (n <= 0) {
+		if (nr == 0)
+			throw new TypeError("Baga macar o manea ceva acolo sa placa la toata lumea");
+		throw new TypeError("Numar invalid de manele");
+		//n = Math.floor(Math.random() * arr.length);
+		//console.error("Numar invalid de manele\nIa " + n + " de la fratele");
+	}
+
+	let len = arr.length;
+	if (n > len) {
+		//throw new RangeError("N-avem atatea manele bosssule!");
+		n = len;
+		console.error("Inca n-avem atatea manele bosssule!\nIa " + n + " de la fratele");
+	}
+
+	let result = new Array(n),
 		taken = new Array(len);
-	if (n > len)
-		throw new RangeError("N-avem atatea manele bosssule!");
 	while (n--) {
 		let x = Math.floor(Math.random() * len);
 		result[n] = addURL(arr[x in taken ? taken[x] : x]);
 		taken[x] = --len in taken ? taken[len] : len;
 	}
+
 	return result;
 }
 
